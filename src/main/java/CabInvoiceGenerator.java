@@ -7,7 +7,7 @@ public class CabInvoiceGenerator {
     public double CalculateFare(double DISTANCE, int TIME) {
 
         totalFare = COST_PER_KM * DISTANCE + COST_PER_MINUTE * TIME;
-        if(totalFare < MIN_FARE)
+        if (totalFare < MIN_FARE)
             totalFare = MIN_FARE;
         return totalFare;
     }
